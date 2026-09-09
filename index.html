@@ -298,10 +298,11 @@ table.tl tr:last-child td{border-bottom:0}
       <p>Bilan SEA &amp; Meta Ads</p>
     </div>
     <div class="nav-label">Rapport</div>
-    <button class="nav-item" data-page="overview" style="--dot:#ffb600"><span class="dot"></span><span>Vue d'ensemble<span class="sub">Groupe · Jan – Août 2026</span></span></button>
+    <button class="nav-item" data-page="overview" style="--dot:#ffb600"><span class="dot"></span><span>Vue d'ensemble<span class="sub">Groupe · Jan – Sept. 2026</span></span></button>
     <button class="nav-item" data-page="creations" style="--dot:#ffb600"><span class="dot"></span><span>Visuels &amp; previews<span class="sub">Captures des campagnes</span></span></button>
     <button class="nav-item" data-page="ciblage" style="--dot:#ffb600"><span class="dot"></span><span>Ciblage &amp; annonces<span class="sub">Mots-clés · audiences</span></span></button>
     <button class="nav-item" data-page="timeline" style="--dot:#ffb600"><span class="dot"></span><span>Chronologie &amp; tests<span class="sub">Activité · A/B</span></span></button>
+    <button class="nav-item" data-page="ca" style="--dot:#1e8e5a"><span class="dot"></span><span>Chiffres d'Affaires<span class="sub">2024–2026</span></span></button>
     <div class="nav-label">Hôtels</div>
     <button class="nav-item" data-page="pirogue" style="--dot:#fa6259"><span class="dot"></span><span>La Pirogue<span class="sub">L'authentique</span></span></button>
     <button class="nav-item" data-page="sugar" style="--dot:#8e3a80"><span class="dot"></span><span>Sugar Beach<span class="sub">Le glamour</span></span></button>
@@ -22725,6 +22726,454 @@ const SEA = {
   }
  }
 };
+const CA_DATA = {
+ "file": "CA_par_hotel_Sunlife.xlsx",
+ "sheets": [
+  {
+   "name": "Sunlife Global",
+   "title": "SUNLIFE — CA GLOBAL (somme des 4 hôtels)",
+   "header": [
+    "Mois",
+    "2024",
+    "2025",
+    "2026",
+    "Δ 2026 vs 2025"
+   ],
+   "rows": [
+    {
+     "label": "Juillet",
+     "values": [
+      313000,
+      225000,
+      271000
+     ],
+     "delta": 0.2044444444444445
+    },
+    {
+     "label": "Août",
+     "values": [
+      305000,
+      169125,
+      344000
+     ],
+     "delta": 1.0339985218034
+    },
+    {
+     "label": "Septembre",
+     "values": [
+      355000,
+      137000,
+      null
+     ],
+     "delta": null
+    },
+    {
+     "label": "Octobre",
+     "values": [
+      257700,
+      233000,
+      null
+     ],
+     "delta": null
+    },
+    {
+     "label": "Novembre",
+     "values": [
+      394000,
+      767000,
+      null
+     ],
+     "delta": null
+    },
+    {
+     "label": "Décembre",
+     "values": [
+      322000,
+      374000,
+      null
+     ],
+     "delta": null
+    }
+   ],
+   "totals": [
+    {
+     "label": "Total Juil–Août (comparable)",
+     "values": [
+      618000,
+      394125,
+      615000
+     ],
+     "delta": 0.560418648905804
+    }
+   ],
+   "notes": [
+    "À retenir :",
+    "Juil–Août 2026 = 615 000 € vs 394 125 € en 2025  →  +56% ; retour au niveau 2024 (618 000 €).",
+    "Note : 2026 disponible seulement jusqu'à août — comparaison à périmètre identique (Juil–Août)."
+   ]
+  },
+  {
+   "name": "La Pirogue",
+   "title": "La Pirogue — CA (Google Analytics)",
+   "header": [
+    "Mois",
+    "2024",
+    "2025",
+    "2026",
+    "Δ 2026 vs 2025"
+   ],
+   "rows": [
+    {
+     "label": "Juillet",
+     "values": [
+      77000,
+      30000,
+      37000
+     ],
+     "delta": 0.2333333333333333
+    },
+    {
+     "label": "Août",
+     "values": [
+      95000,
+      125,
+      43000
+     ],
+     "delta": 343
+    },
+    {
+     "label": "Septembre",
+     "values": [
+      63000,
+      24000,
+      14000
+     ],
+     "delta": null
+    },
+    {
+     "label": "Octobre",
+     "values": [
+      3400,
+      71000,
+      0
+     ],
+     "delta": null
+    },
+    {
+     "label": "Novembre",
+     "values": [
+      69000,
+      206000,
+      0
+     ],
+     "delta": null
+    },
+    {
+     "label": "Décembre",
+     "values": [
+      76000,
+      74000,
+      0
+     ],
+     "delta": null
+    }
+   ],
+   "totals": [
+    {
+     "label": "Total Juil–Août (comparable)",
+     "values": [
+      172000,
+      30125,
+      80000
+     ],
+     "delta": 1.65560165975104
+    },
+    {
+     "label": "Total Juil–Déc (disponible)",
+     "values": [
+      383400,
+      405125,
+      94000
+     ],
+     "delta": null
+    }
+   ],
+   "notes": [
+    "Note : 2026 disponible seulement jusqu'à août — comparer Juil–Août à périmètre identique."
+   ]
+  },
+  {
+   "name": "Sugar Beach",
+   "title": "Sugar Beach — CA (Google Analytics)",
+   "header": [
+    "Mois",
+    "2024",
+    "2025",
+    "2026",
+    "Δ 2026 vs 2025"
+   ],
+   "rows": [
+    {
+     "label": "Juillet",
+     "values": [
+      139000,
+      113000,
+      156000
+     ],
+     "delta": 0.3805309734513274
+    },
+    {
+     "label": "Août",
+     "values": [
+      118000,
+      106000,
+      157000
+     ],
+     "delta": 0.4811320754716981
+    },
+    {
+     "label": "Septembre",
+     "values": [
+      180000,
+      60000,
+      37000
+     ],
+     "delta": null
+    },
+    {
+     "label": "Octobre",
+     "values": [
+      245000,
+      96000,
+      null
+     ],
+     "delta": null
+    },
+    {
+     "label": "Novembre",
+     "values": [
+      276000,
+      383000,
+      null
+     ],
+     "delta": null
+    },
+    {
+     "label": "Décembre",
+     "values": [
+      148000,
+      148000,
+      null
+     ],
+     "delta": null
+    }
+   ],
+   "totals": [
+    {
+     "label": "Total Juil–Août (comparable)",
+     "values": [
+      257000,
+      219000,
+      313000
+     ],
+     "delta": 0.4292237442922374
+    },
+    {
+     "label": "Total Juil–Déc (disponible)",
+     "values": [
+      1106000,
+      906000,
+      350000
+     ],
+     "delta": null
+    }
+   ],
+   "notes": [
+    "Note : 2026 disponible seulement jusqu'à août — comparer Juil–Août à périmètre identique."
+   ]
+  },
+  {
+   "name": "Ambre",
+   "title": "Ambre — CA (Google Analytics)",
+   "header": [
+    "Mois",
+    "2024",
+    "2025",
+    "2026",
+    "Δ 2026 vs 2025"
+   ],
+   "rows": [
+    {
+     "label": "Juillet",
+     "values": [
+      25000,
+      10000,
+      9000
+     ],
+     "delta": -0.1
+    },
+    {
+     "label": "Août",
+     "values": [
+      20000,
+      23000,
+      21000
+     ],
+     "delta": -0.08695652173913043
+    },
+    {
+     "label": "Septembre",
+     "values": [
+      28000,
+      14000,
+      10000
+     ],
+     "delta": null
+    },
+    {
+     "label": "Octobre",
+     "values": [
+      0,
+      24000,
+      null
+     ],
+     "delta": null
+    },
+    {
+     "label": "Novembre",
+     "values": [
+      14000,
+      34000,
+      null
+     ],
+     "delta": null
+    },
+    {
+     "label": "Décembre",
+     "values": [
+      31000,
+      20000,
+      null
+     ],
+     "delta": null
+    }
+   ],
+   "totals": [
+    {
+     "label": "Total Juil–Août (comparable)",
+     "values": [
+      45000,
+      33000,
+      30000
+     ],
+     "delta": -0.09090909090909091
+    },
+    {
+     "label": "Total Juil–Déc (disponible)",
+     "values": [
+      118000,
+      125000,
+      40000
+     ],
+     "delta": null
+    }
+   ],
+   "notes": [
+    "Note : 2026 disponible seulement jusqu'à août — comparer Juil–Août à périmètre identique."
+   ]
+  },
+  {
+   "name": "Long Beach",
+   "title": "Long Beach — CA (Google Analytics)",
+   "header": [
+    "Mois",
+    "2024",
+    "2025",
+    "2026",
+    "Δ 2026 vs 2025"
+   ],
+   "rows": [
+    {
+     "label": "Juillet",
+     "values": [
+      72000,
+      72000,
+      69000
+     ],
+     "delta": -0.04166666666666666
+    },
+    {
+     "label": "Août",
+     "values": [
+      72000,
+      40000,
+      123000
+     ],
+     "delta": 2.075
+    },
+    {
+     "label": "Septembre",
+     "values": [
+      84000,
+      39000,
+      5800
+     ],
+     "delta": null
+    },
+    {
+     "label": "Octobre",
+     "values": [
+      9300,
+      42000,
+      null
+     ],
+     "delta": null
+    },
+    {
+     "label": "Novembre",
+     "values": [
+      35000,
+      144000,
+      null
+     ],
+     "delta": null
+    },
+    {
+     "label": "Décembre",
+     "values": [
+      67000,
+      132000,
+      null
+     ],
+     "delta": null
+    }
+   ],
+   "totals": [
+    {
+     "label": "Total Juil–Août (comparable)",
+     "values": [
+      144000,
+      112000,
+      192000
+     ],
+     "delta": 0.7142857142857143
+    },
+    {
+     "label": "Total Juil–Déc (disponible)",
+     "values": [
+      339300,
+      469000,
+      197800
+     ],
+     "delta": null
+    }
+   ],
+   "notes": [
+    "Note : 2026 disponible seulement jusqu'à août — comparer Juil–Août à périmètre identique."
+   ]
+  }
+ ]
+};
 
 /* ================= CONFIG ================= */
 const HOTELS = {
@@ -23562,6 +24011,132 @@ function adTests(){
   return out;
 }
 
+
+/* ---------- Chiffres d'affaires : restitution de CA_par_hotel_Sunlife.xlsx ----------
+   Les montants, les lignes de total, les écarts et les notes proviennent tels quels
+   du fichier. Rien n'est recalculé ni complété : une cellule vide reste vide. */
+const CA_SHEET_COLOR = {'La Pirogue':'pirogue','Sugar Beach':'sugar','Ambre':'ambre','Long Beach':'longbeach'};
+
+/* les écarts sont stockés en ratio dans le fichier (0,5604 → +56 %),
+   comme l'indique sa propre note de synthèse */
+const caPctRaw = v => v == null ? '—' : (v >= 0 ? '+' : '') + Math.round(v * 100) + ' %';
+const caDelta = v => v == null ? '—'
+  : '<span class="delta ' + (v >= 0 ? 'up' : 'down') + '">' + caPctRaw(v) + '</span>';
+const caVal = v => v == null ? '—' : (typeof v === 'number' ? eur(v) : esc(v));
+
+/* graphique des lignes mensuelles de la feuille globale */
+function caBars(rowsIn, years){
+  const rows = rowsIn;
+  const W = 720, H = 300, ML = 56, MR = 10, MT = 14, MB = 46;
+  const iw = W - ML - MR, ih = H - MT - MB;
+  const fills = ['#cfc6b8', '#8d8377', '#1e8e5a'];
+  let max = 0;
+  for(const r of rows) for(const v of r.values) if(typeof v === 'number') max = Math.max(max, v);
+  const stepv = 200000;
+  const top = Math.max(stepv, Math.ceil(max / stepv) * stepv);
+  const yOf = v => MT + ih - (v / top) * ih;
+  const gw = iw / rows.length;
+  const bw = Math.min(26, (gw - 14) / 3);
+
+  let g = '';
+  for(let t = 0; t <= top; t += stepv){
+    const yy = yOf(t);
+    g += '<line x1="' + ML + '" y1="' + yy.toFixed(1) + '" x2="' + (W - MR) + '" y2="' + yy.toFixed(1) +
+         '" stroke="#e8e2d8" stroke-width="1"/><text x="' + (ML - 8) + '" y="' + (yy + 4).toFixed(1) +
+         '" text-anchor="end" font-size="10.5" fill="#716967">' + (t / 1000) + 'k</text>';
+  }
+  rows.forEach((r, ri) => {
+    const cx = ML + ri * gw + gw / 2;
+    const span = bw * 3 + 8;
+    r.values.forEach((v, k) => {
+      const x = cx - span / 2 + k * (bw + 4);
+      if(typeof v !== 'number'){
+        g += '<text x="' + (x + bw / 2).toFixed(1) + '" y="' + (MT + ih - 5) +
+             '" text-anchor="middle" font-size="10" fill="#b7ada0">·</text>';
+        return;
+      }
+      const yy = yOf(v), hh = MT + ih - yy;
+      g += '<rect x="' + x.toFixed(1) + '" y="' + yy.toFixed(1) + '" width="' + bw.toFixed(1) +
+           '" height="' + Math.max(v === 0 ? 0 : 1, hh).toFixed(1) + '" fill="' + fills[k] + '" rx="2">' +
+           '<title>' + esc(r.label) + ' ' + esc(years[k]) + ' — ' + eur(v) + '</title></rect>';
+    });
+    g += '<text x="' + cx.toFixed(1) + '" y="' + (H - MB + 18) + '" text-anchor="middle" font-size="11.5" fill="#382e2c">' +
+         esc(r.label) + '</text>';
+  });
+  let leg = '';
+  years.forEach((y, k) => {
+    const lx = ML + k * 92;
+    leg += '<rect x="' + lx + '" y="' + (H - 14) + '" width="10" height="10" fill="' + fills[k] + '" rx="2"/>' +
+           '<text x="' + (lx + 15) + '" y="' + (H - 5) + '" font-size="11" fill="#716967">' + esc(y) + '</text>';
+  });
+  return '<svg viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="Chiffre d’affaires mensuel par année">' +
+         g + leg + '</svg>';
+}
+
+function caTable(sheet){
+  const head = sheet.header.length ? sheet.header : ['Mois', '2024', '2025', '2026', 'Δ 2026 vs 2025'];
+  let h = '<div class="twrap"><table><thead><tr>' +
+    head.map((c, k) => '<th' + (k === 0 ? '' : '') + '>' + esc(c) + '</th>').join('') +
+    '</tr></thead><tbody>';
+  for(const r of sheet.rows){
+    h += '<tr><td style="text-align:left">' + esc(r.label) + '</td>' +
+         r.values.map(v => '<td>' + caVal(v) + '</td>').join('') +
+         '<td>' + caDelta(r.delta) + '</td></tr>';
+  }
+  for(const t of sheet.totals){
+    h += '<tr class="total"><td style="text-align:left">' + esc(t.label) + '</td>' +
+         t.values.map(v => '<td>' + caVal(v) + '</td>').join('') +
+         '<td>' + caDelta(t.delta) + '</td></tr>';
+  }
+  return h + '</tbody></table></div>';
+}
+
+function renderCA(){
+  const sheets = (CA_DATA && CA_DATA.sheets) || [];
+  if(!sheets.length){
+    return '<div class="band" style="--accent:#1e8e5a;--accent-dark:#14663f"><h2>Chiffres d’affaires</h2></div>' +
+           '<div class="content"><div class="limit">Aucune donnée de chiffre d’affaires disponible.</div></div>';
+  }
+  const glob = sheets[0];
+  const years = (glob.header.length ? glob.header.slice(1, 4) : ['2024', '2025', '2026']);
+
+  /* les trois indicateurs reprennent la ligne de total du fichier, sans retraitement */
+  const tot = glob.totals[0] || null;
+  const kpis = tot ? '<div class="kpis">' +
+      kpiCard(esc(years[2]) + ' · ' + esc(tot.label.replace(/^Total\s*/i, '')), caVal(tot.values[2]),
+              esc(glob.title), true) +
+      kpiCard(esc(years[1]), caVal(tot.values[1]), esc(tot.label), false,
+              tot.delta != null ? ' ' + caDelta(tot.delta) : '') +
+      kpiCard(esc(years[0]), caVal(tot.values[0]), esc(tot.label)) +
+    '</div>' : '';
+
+  const sections = sheets.map((sh, idx) => {
+    const hk = CA_SHEET_COLOR[sh.name];
+    const cfg = hk ? HOTELS[hk] : null;
+    const style = cfg ? ' style="--accent:' + cfg.accent + ';--accent-dark:' + cfg.dark + ';--accent-soft:' + cfg.soft + '"' : '';
+    const hstyle = cfg ? ' style="border-bottom-color:' + cfg.accent + '"' : '';
+    return '<div class="sect"' + style + '>' +
+      '<h3' + hstyle + '>' + esc(sh.title || sh.name) + '</h3>' +
+      caTable(sh) +
+      (sh.notes.length ? '<p class="footnote">' + sh.notes.map(esc).join('<br>') + '</p>' : '') +
+      '</div>';
+  }).join('');
+
+  const chart = glob.rows.length ? '<div class="sect"><h3>Trajectoire mensuelle</h3>' +
+    '<p class="hint">Les lignes mensuelles de la feuille «&nbsp;' + esc(glob.name) + '&nbsp;», année par année. ' +
+    'Un point à la place d’une barre signale une cellule vide dans le fichier.</p>' +
+    '<div class="card"><div class="svgwrap">' + caBars(glob.rows, years) + '</div></div></div>' : '';
+
+  return '<div class="band" style="--accent:#1e8e5a;--accent-dark:#14663f">' +
+    '<div class="crumb">Rapport de performance · Chiffres d’affaires</div>' +
+    '<h2>Chiffres d’affaires ' + esc(years.join(' – ')) + '</h2>' +
+    '<div class="tagline">Chiffre d’affaires relevé dans Google Analytics, hôtel par hôtel, tel que fourni dans le fichier de suivi.</div>' +
+    '<div class="chips"><span class="chip">' + esc(years.join(' · ')) + '</span>' +
+    '<span class="chip">' + sheets.length + ' feuilles</span>' +
+    '<span class="chip">Source : ' + esc(CA_DATA.file || 'fichier CA') + '</span></div></div>' +
+    '<div class="content">' + kpis + chart + sections + '</div>';
+}
+
 function renderTimeline(){
   const months = [];
   for(let i=PERIOD.from;i<=PERIOD.to;i++) months.push(i);
@@ -23786,7 +24361,7 @@ function applyGalFilter(){
 
 /* ================= APP ================= */
 const PAGES = {overview: renderOverview, creations: renderCaptures,
-  ciblage: renderCiblage, timeline: renderTimeline,
+  ciblage: renderCiblage, timeline: renderTimeline, ca: renderCA,
   pirogue:()=>renderHotel('pirogue'), sugar:()=>renderHotel('sugar'),
   ambre:()=>renderHotel('ambre'), longbeach:()=>renderHotel('longbeach'), bayclub:()=>renderHotel('bayclub')};
 /* pages qui dépendent de la période sélectionnée */
