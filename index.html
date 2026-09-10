@@ -23237,9 +23237,9 @@ function periodShort(p){
   return p.from===p.to ? a : a+' – '+b;
 }
 /* Le dernier mois est-il encore en cours de collecte ?
-   Août 2026 est clôturé (bilan final du 1er septembre), donc non. */
+   Le bilan de reference est arrete au 9 septembre 2026, donc non. */
 const PROVISIONAL_LAST = false;
-const DATA_ASOF = '31/08/2026';
+const DATA_ASOF = '09/09/2026';
 const hasCurrentMonth = p => PROVISIONAL_LAST && inPeriod(LAST_IDX, p||PERIOD);
 const CURRENT_LABEL = MONTH_LABEL[MONTH_ORDER[LAST_IDX]];
 const activeCompare = () => PERIOD.compare && prevPeriod()!==null;
@@ -23593,7 +23593,7 @@ function renderHotel(key){
   return bandTop+`
   <div class="content">
     <div class="kpis">
-      ${kpiCard('Nombre de réservations', A.nResa, A.nResa?('Panier moyen : '+eur(panier)):'Aucune réservation sur la période', true, deltaBadge(A.nResa, Aprev&&Aprev.nResa, num), 'count')}
+      ${kpiCard('Nombre de réservations', A.nResa, A.nResa?('Panier moyen : '+eur(panier)):(key==='bayclub'?'Anahita non trackable dans GA — résultats mesurés via le PMS/moteur, hors périmètre de ce Dashboard.':'Aucune réservation sur la période'), true, deltaBadge(A.nResa, Aprev&&Aprev.nResa, num), 'count')}
       ${kpiCard('Montant des réservations', eur(gainTotal), A.nResa?(A.nResa+' réservation'+(A.nResa>1?'s':'')+' attribuée'+(A.nResa>1?'s':'')):'—', false, deltaBadge(gainTotal, Aprev&&Aprev.gain, eur))}
       ${kpiCard('Budget dépensé', eur(budTotal), 'Meta '+eur(A.plat.FB.bud)+' · Google '+eur(A.plat.GOOGLE.bud), false, deltaBadge(budTotal, Aprev&&Aprev.budget, eur))}
       ${kpiCard('ROI', roiF(A.roi), gainTotal? 'Meilleur mois : '+fullLabels[bestI]+' ('+roiF(sRoi[bestI])+')' : 'Aucune réservation attribuée', false, deltaBadge(A.roi, Aprev&&Aprev.roi, roiF))}
