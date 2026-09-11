@@ -24630,7 +24630,17 @@ function renderTimeline(){
   /* échelle de couleur commune : dépense mensuelle max toutes lignes confondues */
   let maxBud = 1;
   for(const k in act) for(const i in act[k]) for(const p of ['FB','GOOGLE']) maxBud = Math.max(maxBud, act[k][i][p].bud);
-  const shade = (v, accent) => v<=0 ? '' : `background:${accent};opacity:${(0.16 + 0.84*Math.min(1, v/maxBud)).toFixed(2)}`;
+  const hexRgb = h => { const m = String(h).replace('#',''); return [0,2,4].map(i => parseInt(m.slice(i,i+2),16)); };
+  /* Le fond porte l'intensité, jamais le texte : l'opacité d'origine s'appliquait
+     à toute la cellule et rendait les petits montants illisibles. L'alpha est
+     plafonné à 0,43, valeur au-delà de laquelle l'encre #382e2c passe sous le
+     seuil de contraste 4,5:1 sur le bleu du Bay Club, la teinte la plus sombre. */
+  const shade = (v, accent) => {
+    if(v<=0) return '';
+    const a = 0.08 + 0.35*Math.min(1, v/maxBud);
+    const [r,g,b] = hexRgb(accent);
+    return `background:rgba(${r},${g},${b},${a.toFixed(2)})`;
+  };
 
   let tl = `<div class="tl-wrap"><table class="tl"><thead><tr><th>Hôtel / canal</th>${months.map(i=>`<th>${MONTH_ABBR[MONTH_ORDER[i]]}</th>`).join('')}</tr></thead><tbody>`;
   for(const key in HOTELS){
@@ -24688,7 +24698,7 @@ function renderTimeline(){
   <div class="content">
     <div class="sect" style="margin-top:0">
       <h3>Activité des campagnes</h3>
-      <p class="hint">Dépense mensuelle par canal. L'intensité de couleur indique le niveau d'investissement ; « — » signifie aucune diffusion ce mois-là.</p>
+      <p class="hint">Dépense mensuelle par canal. L'intensité de couleur indique le niveau d'investissement ; une case vide signifie aucune diffusion ce mois-là.</p>
       ${tl}
       <div class="tl-legend">
         <span class="tl-scale">Faible <i style="background:#d8d0c4;opacity:.3"></i><i style="background:#b09a72;opacity:.6"></i><i style="background:#8a6200"></i> Élevé</span>
