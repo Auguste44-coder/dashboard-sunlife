@@ -261,6 +261,7 @@ table.tl tr:last-child td{border-bottom:0}
 
 /* mise en avant du nombre de réservations */
 .kpi.count .val{color:var(--accent-dark)}
+.kpi.money .val{color:var(--good)}
 .nb{font-variant-numeric:tabular-nums;font-weight:600}
 .nb-0{color:var(--muted);font-weight:400}
 .empty-period{background:var(--card);border:1px dashed var(--line);border-radius:10px;padding:26px 22px;text-align:center;color:var(--muted);font-size:13.5px}
@@ -22727,7 +22728,7 @@ const SEA = {
  }
 };
 const CA_DATA = {
- "file": "CA_par_hotel_Sunlife.xlsx",
+ "file": "CA_par_hotel_Sunlife 2026.xlsx",
  "sheets": [
   {
    "name": "Sunlife Global",
@@ -22741,13 +22742,67 @@ const CA_DATA = {
    ],
    "rows": [
     {
+     "label": "janvier",
+     "values": [
+      291000,
+      218000,
+      575000
+     ],
+     "delta": 1.6376146788990826
+    },
+    {
+     "label": "février",
+     "values": [
+      256000,
+      161100,
+      432400
+     ],
+     "delta": 1.6840471756672875
+    },
+    {
+     "label": "mars",
+     "values": [
+      429000,
+      181000,
+      297600
+     ],
+     "delta": 0.6441988950276243
+    },
+    {
+     "label": "avril",
+     "values": [
+      343000,
+      133000,
+      168000
+     ],
+     "delta": 0.2631578947368421
+    },
+    {
+     "label": "mai",
+     "values": [
+      337600,
+      128000,
+      260000
+     ],
+     "delta": 1.03125
+    },
+    {
+     "label": "juin",
+     "values": [
+      387000,
+      154500,
+      351000
+     ],
+     "delta": 1.2718446601941749
+    },
+    {
      "label": "Juillet",
      "values": [
       313000,
       225000,
       271000
      ],
-     "delta": 0.2044444444444445
+     "delta": 0.20444444444444446
     },
     {
      "label": "Août",
@@ -22756,14 +22811,14 @@ const CA_DATA = {
       169125,
       344000
      ],
-     "delta": 1.0339985218034
+     "delta": 1.0339985218033998
     },
     {
      "label": "Septembre",
      "values": [
       355000,
       137000,
-      null
+      0
      ],
      "delta": null
     },
@@ -22772,7 +22827,7 @@ const CA_DATA = {
      "values": [
       257700,
       233000,
-      null
+      0
      ],
      "delta": null
     },
@@ -22781,7 +22836,7 @@ const CA_DATA = {
      "values": [
       394000,
       767000,
-      null
+      0
      ],
      "delta": null
     },
@@ -22790,12 +22845,21 @@ const CA_DATA = {
      "values": [
       322000,
       374000,
-      null
+      0
      ],
      "delta": null
     }
    ],
    "totals": [
+    {
+     "label": "Total Janv–Juin (Comparable)",
+     "values": [
+      2043600,
+      975600,
+      2084000
+     ],
+     "delta": 1.136121361213612
+    },
     {
      "label": "Total Juil–Août (comparable)",
      "values": [
@@ -22804,6 +22868,30 @@ const CA_DATA = {
       615000
      ],
      "delta": 0.560418648905804
+    },
+    {
+     "label": "Total Janv–Sept",
+     "values": [
+      3016600,
+      1506725,
+      2699000
+     ],
+     "delta": 0.7913023278965969,
+     "computed": true,
+     "scope": "janv-sept"
+    },
+    {
+     "label": "Total Janv–Déc",
+     "values": [
+      3990300,
+      2880725,
+      2699000
+     ],
+     "delta": -0.06308307804458946,
+     "computed": true,
+     "scope": "janv-dec",
+     "moisRenseignes2026": 8,
+     "dernierMois2026": "Août"
     }
    ],
    "notes": [
@@ -22824,13 +22912,67 @@ const CA_DATA = {
    ],
    "rows": [
     {
+     "label": "Janvier",
+     "values": [
+      63000,
+      39000,
+      137000
+     ],
+     "delta": 2.5128205128205128
+    },
+    {
+     "label": "Février",
+     "values": [
+      51000,
+      41000,
+      102000
+     ],
+     "delta": 1.4878048780487805
+    },
+    {
+     "label": "Mars",
+     "values": [
+      70000,
+      53000,
+      30000
+     ],
+     "delta": -0.4339622641509434
+    },
+    {
+     "label": "Avril",
+     "values": [
+      68000,
+      45000,
+      10000
+     ],
+     "delta": -0.7777777777777778
+    },
+    {
+     "label": "Mai",
+     "values": [
+      17000,
+      21000,
+      49000
+     ],
+     "delta": 1.3333333333333333
+    },
+    {
+     "label": "Juin",
+     "values": [
+      89000,
+      35000,
+      59000
+     ],
+     "delta": 0.6857142857142857
+    },
+    {
      "label": "Juillet",
      "values": [
       77000,
       30000,
       37000
      ],
-     "delta": 0.2333333333333333
+     "delta": 0.23333333333333334
     },
     {
      "label": "Août",
@@ -22848,7 +22990,7 @@ const CA_DATA = {
       24000,
       14000
      ],
-     "delta": null
+     "delta": -0.4166666666666667
     },
     {
      "label": "Octobre",
@@ -22880,13 +23022,22 @@ const CA_DATA = {
    ],
    "totals": [
     {
+     "label": "Total Janv–Juin (comparable)",
+     "values": [
+      358000,
+      234000,
+      387000
+     ],
+     "delta": 0.6538461538461539
+    },
+    {
      "label": "Total Juil–Août (comparable)",
      "values": [
       172000,
       30125,
       80000
      ],
-     "delta": 1.65560165975104
+     "delta": 1.6556016597510372
     },
     {
      "label": "Total Juil–Déc (disponible)",
@@ -22896,6 +23047,30 @@ const CA_DATA = {
       94000
      ],
      "delta": null
+    },
+    {
+     "label": "Total Janv–Sept",
+     "values": [
+      593000,
+      288125,
+      481000
+     ],
+     "delta": 0.6694143167028199,
+     "computed": true,
+     "scope": "janv-sept"
+    },
+    {
+     "label": "Total Janv–Déc",
+     "values": [
+      741400,
+      639125,
+      481000
+     ],
+     "delta": -0.24740856639937414,
+     "computed": true,
+     "scope": "janv-dec",
+     "moisRenseignes2026": 9,
+     "dernierMois2026": "Septembre"
     }
    ],
    "notes": [
@@ -22913,6 +23088,60 @@ const CA_DATA = {
     "Δ 2026 vs 2025"
    ],
    "rows": [
+    {
+     "label": "Janvier",
+     "values": [
+      140000,
+      118000,
+      245000
+     ],
+     "delta": 1.076271186440678
+    },
+    {
+     "label": "Février",
+     "values": [
+      152000,
+      56000,
+      243000
+     ],
+     "delta": 3.3392857142857144
+    },
+    {
+     "label": "Mars",
+     "values": [
+      213000,
+      67000,
+      188000
+     ],
+     "delta": 1.8059701492537314
+    },
+    {
+     "label": "Avril",
+     "values": [
+      185000,
+      45000,
+      110000
+     ],
+     "delta": 1.4444444444444444
+    },
+    {
+     "label": "Mai",
+     "values": [
+      242000,
+      81000,
+      116000
+     ],
+     "delta": 0.43209876543209874
+    },
+    {
+     "label": "Juin",
+     "values": [
+      204000,
+      68000,
+      202000
+     ],
+     "delta": 1.9705882352941178
+    },
     {
      "label": "Juillet",
      "values": [
@@ -22938,14 +23167,14 @@ const CA_DATA = {
       60000,
       37000
      ],
-     "delta": null
+     "delta": -0.38333333333333336
     },
     {
      "label": "Octobre",
      "values": [
       245000,
       96000,
-      null
+      0
      ],
      "delta": null
     },
@@ -22954,7 +23183,7 @@ const CA_DATA = {
      "values": [
       276000,
       383000,
-      null
+      0
      ],
      "delta": null
     },
@@ -22963,12 +23192,21 @@ const CA_DATA = {
      "values": [
       148000,
       148000,
-      null
+      0
      ],
      "delta": null
     }
    ],
    "totals": [
+    {
+     "label": "Total Janv–Juin (comparable)",
+     "values": [
+      1136000,
+      435000,
+      1104000
+     ],
+     "delta": 1.5379310344827586
+    },
     {
      "label": "Total Juil–Août (comparable)",
      "values": [
@@ -22986,6 +23224,30 @@ const CA_DATA = {
       350000
      ],
      "delta": null
+    },
+    {
+     "label": "Total Janv–Sept",
+     "values": [
+      1573000,
+      714000,
+      1454000
+     ],
+     "delta": 1.0364145658263304,
+     "computed": true,
+     "scope": "janv-sept"
+    },
+    {
+     "label": "Total Janv–Déc",
+     "values": [
+      2242000,
+      1341000,
+      1454000
+     ],
+     "delta": 0.08426547352721858,
+     "computed": true,
+     "scope": "janv-dec",
+     "moisRenseignes2026": 9,
+     "dernierMois2026": "Septembre"
     }
    ],
    "notes": [
@@ -23003,6 +23265,60 @@ const CA_DATA = {
     "Δ 2026 vs 2025"
    ],
    "rows": [
+    {
+     "label": "Janvier",
+     "values": [
+      21000,
+      31000,
+      38000
+     ],
+     "delta": 0.22580645161290322
+    },
+    {
+     "label": "Février",
+     "values": [
+      26000,
+      7100,
+      7400
+     ],
+     "delta": 0.04225352112676056
+    },
+    {
+     "label": "Mars",
+     "values": [
+      25000,
+      14000,
+      5600
+     ],
+     "delta": -0.6
+    },
+    {
+     "label": "Avril",
+     "values": [
+      45000,
+      10000,
+      15000
+     ],
+     "delta": 0.5
+    },
+    {
+     "label": "Mai",
+     "values": [
+      8600,
+      10000,
+      26000
+     ],
+     "delta": 1.6
+    },
+    {
+     "label": "Juin",
+     "values": [
+      20000,
+      9500,
+      34000
+     ],
+     "delta": 2.5789473684210527
+    },
     {
      "label": "Juillet",
      "values": [
@@ -23028,14 +23344,14 @@ const CA_DATA = {
       14000,
       10000
      ],
-     "delta": null
+     "delta": -0.2857142857142857
     },
     {
      "label": "Octobre",
      "values": [
       0,
       24000,
-      null
+      0
      ],
      "delta": null
     },
@@ -23044,7 +23360,7 @@ const CA_DATA = {
      "values": [
       14000,
       34000,
-      null
+      0
      ],
      "delta": null
     },
@@ -23053,12 +23369,21 @@ const CA_DATA = {
      "values": [
       31000,
       20000,
-      null
+      0
      ],
      "delta": null
     }
    ],
    "totals": [
+    {
+     "label": "Total Janv–Juin (comparable)",
+     "values": [
+      145600,
+      81600,
+      126000
+     ],
+     "delta": 0.5441176470588235
+    },
     {
      "label": "Total Juil–Août (comparable)",
      "values": [
@@ -23076,6 +23401,30 @@ const CA_DATA = {
       40000
      ],
      "delta": null
+    },
+    {
+     "label": "Total Janv–Sept",
+     "values": [
+      218600,
+      128600,
+      166000
+     ],
+     "delta": 0.29082426127527206,
+     "computed": true,
+     "scope": "janv-sept"
+    },
+    {
+     "label": "Total Janv–Déc",
+     "values": [
+      263600,
+      206600,
+      166000
+     ],
+     "delta": -0.19651500484027107,
+     "computed": true,
+     "scope": "janv-dec",
+     "moisRenseignes2026": 9,
+     "dernierMois2026": "Septembre"
     }
    ],
    "notes": [
@@ -23094,13 +23443,67 @@ const CA_DATA = {
    ],
    "rows": [
     {
+     "label": "Janvier",
+     "values": [
+      67000,
+      30000,
+      155000
+     ],
+     "delta": 4.166666666666667
+    },
+    {
+     "label": "Février",
+     "values": [
+      27000,
+      57000,
+      80000
+     ],
+     "delta": 0.40350877192982454
+    },
+    {
+     "label": "Mars",
+     "values": [
+      121000,
+      47000,
+      74000
+     ],
+     "delta": 0.574468085106383
+    },
+    {
+     "label": "Avril",
+     "values": [
+      45000,
+      33000,
+      33000
+     ],
+     "delta": 0
+    },
+    {
+     "label": "Mai",
+     "values": [
+      70000,
+      16000,
+      69000
+     ],
+     "delta": 3.3125
+    },
+    {
+     "label": "Juin",
+     "values": [
+      74000,
+      42000,
+      56000
+     ],
+     "delta": 0.3333333333333333
+    },
+    {
      "label": "Juillet",
      "values": [
       72000,
       72000,
       69000
      ],
-     "delta": -0.04166666666666666
+     "delta": -0.041666666666666664
     },
     {
      "label": "Août",
@@ -23118,14 +23521,14 @@ const CA_DATA = {
       39000,
       5800
      ],
-     "delta": null
+     "delta": -0.8512820512820513
     },
     {
      "label": "Octobre",
      "values": [
       9300,
       42000,
-      null
+      0
      ],
      "delta": null
     },
@@ -23134,7 +23537,7 @@ const CA_DATA = {
      "values": [
       35000,
       144000,
-      null
+      0
      ],
      "delta": null
     },
@@ -23143,12 +23546,21 @@ const CA_DATA = {
      "values": [
       67000,
       132000,
-      null
+      0
      ],
      "delta": null
     }
    ],
    "totals": [
+    {
+     "label": "Total Juil–Août (comparable)",
+     "values": [
+      404000,
+      225000,
+      467000
+     ],
+     "delta": 1.0755555555555556
+    },
     {
      "label": "Total Juil–Août (comparable)",
      "values": [
@@ -23166,6 +23578,30 @@ const CA_DATA = {
       197800
      ],
      "delta": null
+    },
+    {
+     "label": "Total Janv–Sept",
+     "values": [
+      632000,
+      376000,
+      664800
+     ],
+     "delta": 0.7680851063829788,
+     "computed": true,
+     "scope": "janv-sept"
+    },
+    {
+     "label": "Total Janv–Déc",
+     "values": [
+      743300,
+      694000,
+      664800
+     ],
+     "delta": -0.04207492795389045,
+     "computed": true,
+     "scope": "janv-dec",
+     "moisRenseignes2026": 9,
+     "dernierMois2026": "Septembre"
     }
    ],
    "notes": [
@@ -23270,6 +23706,17 @@ function groupResaCount(p){
   for(const k in HOTELS) n += hotelAgg(k,p).nResa;
   return n;
 }
+/* Clics du groupe : absent de DATA.monthly, sommé depuis les feuilles hôtel.
+   Restreint aux hôtels suivis dans le bilan exécutif (ceux qui ont une source GA),
+   sinon le CPC diviserait une dépense hors Bay Club par des clics qui l'incluent. */
+function groupClicks(p){
+  let n=0;
+  for(const k in HOTELS){
+    if(!HOTELS[k].ga) continue;
+    const a=hotelAgg(k,p); n += a.plat.FB.cl + a.plat.GOOGLE.cl;
+  }
+  return n;
+}
 /* réservations par pays, tous hôtels — seule source des comptages par marché */
 function countryCounts(p){
   const out={};
@@ -23288,11 +23735,11 @@ function resasInPeriod(cfg, p){
 /* ================= HELPERS ================= */
 const fmt = new Intl.NumberFormat('fr-FR',{maximumFractionDigits:0});
 const fmt2 = new Intl.NumberFormat('fr-FR',{minimumFractionDigits:2,maximumFractionDigits:2});
-const eur = v => v==null?'—':fmt.format(Math.round(v))+' €';
-const eur2 = v => v==null?'—':fmt2.format(v)+' €';
-const num = v => v==null?'—':fmt.format(Math.round(v));
-const pct = v => (v==null||isNaN(v))?'—':(v*100).toLocaleString('fr-FR',{minimumFractionDigits:2,maximumFractionDigits:2})+' %';
-const roiF = v => (v==null||!isFinite(v))?'—':v.toLocaleString('fr-FR',{minimumFractionDigits:2,maximumFractionDigits:2});
+const eur = v => v==null?'':fmt.format(Math.round(v))+' €';
+const eur2 = v => v==null?'':fmt2.format(v)+' €';
+const num = v => v==null?'':fmt.format(Math.round(v));
+const pct = v => (v==null||isNaN(v))?'':(v*100).toLocaleString('fr-FR',{minimumFractionDigits:2,maximumFractionDigits:2})+' %';
+const roiF = v => (v==null||!isFinite(v))?'':v.toLocaleString('fr-FR',{minimumFractionDigits:2,maximumFractionDigits:2});
 const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');
 
 function normMonth(m){
@@ -23467,11 +23914,11 @@ function countryTable(country){
     html+=`<tr><td>${esc(name)}</td>
       <td class="bar-td"><div class="hbar-rail"><div class="hbar" style="width:${Math.max(2,v.bud/maxBud*100)}%"></div></div></td>
       <td>${eur2(v.bud)}</td><td>${num(v.imp)}</td><td>${num(v.cl)}</td>
-      <td>${v.imp?pct(v.cl/v.imp):'—'}</td><td>${v.cl?eur2(v.bud/v.cl):'—'}</td>
-      <td>${nbCell(v.ach)}</td><td>${v.resa?eur(v.resa):'—'}</td><td>${roiPill(roi)}</td></tr>`;
+      <td>${v.imp?pct(v.cl/v.imp):''}</td><td>${v.cl?eur2(v.bud/v.cl):''}</td>
+      <td>${nbCell(v.ach)}</td><td>${v.resa?eur(v.resa):''}</td><td>${roiPill(roi)}</td></tr>`;
   }
   html+=`<tr class="total"><td>TOTAL</td><td class="bar-td"></td><td>${eur2(T.bud)}</td><td>${num(T.imp)}</td><td>${num(T.cl)}</td>
-    <td>${T.imp?pct(T.cl/T.imp):'—'}</td><td>${T.cl?eur2(T.bud/T.cl):'—'}</td><td>${nbCell(T.ach)}</td><td>${eur(T.resa)}</td><td>${roiPill(T.bud?T.resa/T.bud:0)}</td></tr>`;
+    <td>${T.imp?pct(T.cl/T.imp):''}</td><td>${T.cl?eur2(T.bud/T.cl):''}</td><td>${nbCell(T.ach)}</td><td>${eur(T.resa)}</td><td>${roiPill(T.bud?T.resa/T.bud:0)}</td></tr>`;
   return html+'</tbody></table></div>';
 }
 
@@ -23485,7 +23932,7 @@ function rawTable(t){
       let v = r[j];
       let out;
       if(j===0) out = esc(String(v??''));
-      else if(v==null||v==='') out='—';
+      else if(v==null||v==='') out='';
       else if(/CTR/i.test(c)) out = pct(v);
       else if(/Répétition|^ROI$/i.test(c)) out = roiF(v);
       else if(/Budget|CPC|Réservation/i.test(c)) out = eur2(v);
@@ -23503,10 +23950,10 @@ function platformCompare(plat, platPrev){
     ['Dépense', p=>eur2(p.bud), p=>p.bud, eur],
     ['Impressions', p=>num(p.imp), p=>p.imp, num],
     ['Clics', p=>num(p.cl), p=>p.cl, num],
-    ['CTR moyen', p=>p.imp?pct(p.cl/p.imp):'—', null, null],
-    ['CPC moyen', p=>p.cl?eur2(p.bud/p.cl):'—', null, null],
+    ['CTR moyen', p=>p.imp?pct(p.cl/p.imp):'', null, null],
+    ['CPC moyen', p=>p.cl?eur2(p.bud/p.cl):'', null, null],
     ['Nombre de réservations', p=>nbCell(p.ach), p=>p.ach, num],
-    ['Montant réservations', p=>p.resa?eur(p.resa):'—', p=>p.resa, eur],
+    ['Montant réservations', p=>p.resa?eur(p.resa):'', p=>p.resa, eur],
     ['ROI', p=>roiPill(p.bud?p.resa/p.bud:0), null, null]
   ];
   let html = `<div class="twrap"><table style="min-width:0"><thead><tr><th>Indicateur</th>
@@ -23525,7 +23972,7 @@ function resaTable(list){
   let tm=0,tn=0;
   for(const r of sorted){
     tm+=r.montant; tn+=r.nuits||0;
-    html+=`<tr><td>${frDate(r.date)}</td><td style="text-align:left">${esc(normCountry(r.pays))}</td><td>${eur2(r.montant)}</td><td>${r.nuits??'—'}</td><td style="font-family:monospace;font-size:12px">${esc(r.id||'—')}</td></tr>`;
+    html+=`<tr><td>${frDate(r.date)}</td><td style="text-align:left">${esc(normCountry(r.pays))}</td><td>${eur2(r.montant)}</td><td>${r.nuits??''}</td><td style="font-family:monospace;font-size:12px">${esc(r.id||'')}</td></tr>`;
   }
   html+=`<tr class="total"><td>TOTAL</td><td style="text-align:left">${sorted.length} transaction${sorted.length>1?'s':''}</td><td>${eur2(tm)}</td><td>${tn}</td><td></td></tr>`;
   return html+'</tbody></table></div>';
@@ -23580,7 +24027,7 @@ function renderHotel(key){
       return `<h5>${plat}${sub ? esc(sub):''} <span style="font-weight:400;letter-spacing:0;text-transform:none">— détail par pays</span></h5>${rawTable(t)}`;
     }).join('');
     return `<details class="month"><summary><span class="arrow">▶</span><span class="mois">${lab}</span>
-      <span class="mini"><span>Budget ${eur(m.budget)}</span><span><b class="nb${nMois?'':' nb-0'}">${nMois}</b> résa</span><span>${eur(m.gain)}</span><span>${m.roi?('ROI '+roiF(m.roi)):'ROI —'}</span></span></summary>
+      <span class="mini"><span>Budget ${eur(m.budget)}</span><span><b class="nb${nMois?'':' nb-0'}">${nMois}</b> résa</span><span>${eur(m.gain)}</span><span>${m.roi?('ROI '+roiF(m.roi)):''}</span></span></summary>
       <div class="inner">${inner||'<p class="footnote">Pas de données détaillées ce mois-ci.</p>'}</div></details>`;
   }).join('');
 
@@ -23589,17 +24036,20 @@ function renderHotel(key){
     {label:'Google Ads', v:A.plat.GOOGLE.bud, c:'#d8d0c4'}
   ];
   const gaTotal2026 = gaRows ? gaRows.reduce((a,r)=>a+(r.y2026||0),0) : null;
+  /* 0 € attribué sur des ventes GA réelles est une information (0 %),
+     pas une absence de donnée : seul un GA nul rend le ratio indéfini. */
+  const partGA = gaTotal2026 > 0 ? (gainTotal || 0) / gaTotal2026 : null;
 
   return bandTop+`
   <div class="content">
     <div class="kpis">
       ${kpiCard('Nombre de réservations', A.nResa, A.nResa?('Panier moyen : '+eur(panier)):(key==='bayclub'?'Anahita non trackable dans GA — résultats mesurés via le PMS/moteur, hors périmètre de ce Dashboard.':'Aucune réservation sur la période'), true, deltaBadge(A.nResa, Aprev&&Aprev.nResa, num), 'count')}
-      ${kpiCard('Montant des réservations', eur(gainTotal), A.nResa?(A.nResa+' réservation'+(A.nResa>1?'s':'')+' attribuée'+(A.nResa>1?'s':'')):'—', false, deltaBadge(gainTotal, Aprev&&Aprev.gain, eur))}
+      ${kpiCard('Montant des réservations', eur(gainTotal), A.nResa?(A.nResa+' réservation'+(A.nResa>1?'s':'')+' attribuée'+(A.nResa>1?'s':'')):'', false, deltaBadge(gainTotal, Aprev&&Aprev.gain, eur))}
       ${kpiCard('Budget dépensé', eur(budTotal), 'Meta '+eur(A.plat.FB.bud)+' · Google '+eur(A.plat.GOOGLE.bud), false, deltaBadge(budTotal, Aprev&&Aprev.budget, eur))}
-      ${kpiCard('ROI', roiF(A.roi), gainTotal? 'Meilleur mois : '+fullLabels[bestI]+' ('+roiF(sRoi[bestI])+')' : 'Aucune réservation attribuée', false, deltaBadge(A.roi, Aprev&&Aprev.roi, roiF))}
+      ${kpiCard('% Gramica sur le GA', partGA==null?'':pct(partGA), partGA==null?(cfg.ga?'Ventes GA indisponibles sur la période':'Hôtel non suivi dans Google Analytics'):'Réservations attribuées / ventes GA de l’hôtel')}
       ${kpiCard('Impressions', num(imps), 'Clics : '+num(clics), false, deltaBadge(imps, Aprev&&(Aprev.plat.FB.imp+Aprev.plat.GOOGLE.imp), num))}
-      ${kpiCard('CTR / CPC Meta', pct(A.plat.FB.imp?A.plat.FB.cl/A.plat.FB.imp:null), 'CPC '+ (A.plat.FB.cl?eur2(A.plat.FB.bud/A.plat.FB.cl):'—'))}
-      ${nTx?kpiCard('Nuits vendues', num(nuits), nTx+' transaction'+(nTx>1?'s':'')+' détaillée'+(nTx>1?'s':'')):kpiCard('Ventes GA', gaTotal2026!=null?eur(gaTotal2026):'—','Toutes sources site')}
+      ${kpiCard('CTR / CPC Meta', pct(A.plat.FB.imp?A.plat.FB.cl/A.plat.FB.imp:null), (A.plat.FB.cl?'CPC '+eur2(A.plat.FB.bud/A.plat.FB.cl):''))}
+      ${nTx?kpiCard('Nuits vendues', num(nuits), nTx+' transaction'+(nTx>1?'s':'')+' détaillée'+(nTx>1?'s':'')):kpiCard('Ventes GA', gaTotal2026!=null?eur(gaTotal2026):'','Toutes sources site')}
     </div>
     ${activeCompare()?`<p class="cmp-note">Les écarts sont calculés vs la période précédente de même durée (${periodShort(prev)} ${YEAR}).</p>`:''}
 
@@ -23688,6 +24138,9 @@ function renderOverview(){
   const mCount = monthlyCounts();
   const nResa = groupResaCount();
   const nResaPrev = activeCompare() ? groupResaCount(prev) : null;
+  const clics = groupClicks();
+  const clicsPrev = activeCompare() ? groupClicks(prev) : null;
+  const partGA = G.ga ? G.booking / G.ga : null;
 
   const bandTop = `
   <div class="band" style="--accent:#ffb600;--accent-dark:#b57f00">
@@ -23716,7 +24169,7 @@ function renderOverview(){
   for(const {key,cfg,A} of hAgg){
     hotelTable+=`<tr><td><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${cfg.accent};margin-right:8px"></span>${esc(cfg.name)}</td>
     <td class="bar-td"><div class="hbar-rail"><div class="hbar" style="width:${Math.max(2,A.gain/maxBook*100)}%;background:${cfg.accent}"></div></div></td>
-    <td>${eur(A.budget)}</td><td>${nbCell(A.nResa)}</td><td>${eur(A.gain)}</td><td>${roiPill(A.roi)}</td><td>${totBook?Math.round(A.gain/totBook*100)+' %':'—'}</td></tr>`;
+    <td>${eur(A.budget)}</td><td>${nbCell(A.nResa)}</td><td>${eur(A.gain)}</td><td>${roiPill(A.roi)}</td><td>${totBook?Math.round(A.gain/totBook*100)+' %':''}</td></tr>`;
   }
   hotelTable+=`<tr class="total"><td>TOTAL</td><td class="bar-td"></td><td>${eur(totBudH)}</td><td>${nbCell(totCountH)}</td><td>${eur(totBook)}</td><td>${roiPill(totBudH?totBook/totBudH:0)}</td><td>100 %</td></tr></tbody></table></div>`;
 
@@ -23734,11 +24187,11 @@ function renderOverview(){
   let countryTable2 = `<div class="twrap"><table><thead><tr><th>Marché</th><th class="bar-td">Répartition</th><th>Budget</th><th>Nb résa</th><th>Montant résa</th><th>ROI</th></tr></thead><tbody>`;
   for(const [name,v] of cRows){
     countryTable2+=`<tr><td>${esc(name)}</td><td class="bar-td"><div class="hbar-rail"><div class="hbar" style="width:${Math.max(2,v.book/maxCB*100)}%"></div></div></td>
-    <td>${eur(v.bud)}</td><td>${nbCell(cCount[name]||0)}</td><td>${v.book?eur(v.book):'—'}</td><td>${roiPill(v.bud?v.book/v.bud:0)}</td></tr>`;
+    <td>${eur(v.bud)}</td><td>${nbCell(cCount[name]||0)}</td><td>${v.book?eur(v.book):''}</td><td>${roiPill(v.bud?v.book/v.bud:0)}</td></tr>`;
   }
   if(gapBook > 1){
-    countryTable2+=`<tr><td style="color:var(--muted)">Non ventilé par marché</td><td class="bar-td"><div class="hbar-rail"><div class="hbar" style="width:${Math.max(2,gapBook/maxCB*100)}%;background:#d8d0c4"></div></div></td>
-    <td>—</td><td>—</td><td>${eur(gapBook)}</td><td>—</td></tr>`;
+    countryTable2+=`<tr><td style="color:var(--muted)">Non ventilé par marché<div class="footnote" style="margin-top:2px">part non rattachée à un marché du fait du tracking à corriger — chantier en cours</div></td><td class="bar-td"><div class="hbar-rail"><div class="hbar" style="width:${Math.max(2,gapBook/maxCB*100)}%;background:#d8d0c4"></div></div></td>
+    <td></td><td></td><td>${eur(gapBook)}</td><td></td></tr>`;
   }
   countryTable2+=`<tr class="total"><td>TOTAL</td><td class="bar-td"></td><td>${eur(cSumBud)}</td><td>${nbCell(cSumN)}</td><td>${eur(G.booking)}</td><td>${roiPill(cSumBud?G.booking/cSumBud:0)}</td></tr>`;
   countryTable2+='</tbody></table></div>';
@@ -23749,8 +24202,8 @@ function renderOverview(){
     const d=new Date(m.date), lb=d.toLocaleDateString('fr-FR',{month:'long'});
     const i=monthIdxOfISO(m.date), n=mCount[i]||0; moN+=n;
     moTable+=`<tr><td style="text-transform:capitalize">${lb}${(PROVISIONAL_LAST && i===LAST_IDX)?' <span class="pill roi-mid">en cours</span>':''}</td>
-    <td>${eur(m.budget)}</td><td>${nbCell(n)}</td><td>${m.booking?eur(m.booking):'—'}</td><td>${roiPill(m.roi)}</td>
-    <td>${m.ga?eur(m.ga):'—'}</td><td>${m.roiGA?roiF(m.roiGA):'—'}</td></tr>`;
+    <td>${eur(m.budget)}</td><td>${nbCell(n)}</td><td>${m.booking?eur(m.booking):''}</td><td>${roiPill(m.roi)}</td>
+    <td>${m.ga?eur(m.ga):''}</td><td>${m.roiGA?roiF(m.roiGA):''}</td></tr>`;
   }
   moTable+=`<tr class="total"><td>TOTAL</td><td>${eur(G.budget)}</td><td>${nbCell(moN)}</td><td>${eur(G.booking)}</td><td>${roiPill(G.roi)}</td><td>${eur(G.ga)}</td><td>${roiF(G.roiGA)}</td></tr></tbody></table></div>`;
 
@@ -23773,12 +24226,12 @@ function renderOverview(){
   return bandTop+`
   <div class="content">
     <div class="kpis">
+      ${kpiCard('Dépense média', eur(G.budget), periodLen()+' mois · Meta + Google Ads', false, deltaBadge(G.budget, Gprev&&Gprev.budget, eur))}
+      ${kpiCard('Clics vers le site', num(clics), clics?('CPC moyen : '+eur2(G.budget/clics)):'', false, deltaBadge(clics, clicsPrev, num))}
       ${kpiCard('Nombre de réservations', nResa, 'Achats trackés sur le site', true, deltaBadge(nResa, nResaPrev, num), 'count')}
-      ${kpiCard('Montant des réservations', eur(G.booking), nResa?('Panier moyen : '+eur(G.booking/nResa)):'—', false, deltaBadge(G.booking, Gprev&&Gprev.booking, eur))}
-      ${kpiCard('Budget total investi', eur(G.budget), periodLen()+' mois · 2 plateformes', false, deltaBadge(G.budget, Gprev&&Gprev.budget, eur))}
-      ${kpiCard('ROI campagnes', roiF(G.roi), '1 € investi → '+roiF(G.roi)+' € réservés', false, deltaBadge(G.roi, Gprev&&Gprev.roi, roiF))}
-      ${kpiCard('Ventes site (GA)', eur(G.ga), 'Toutes sources confondues', false, deltaBadge(G.ga, Gprev&&Gprev.ga, eur))}
-      ${kpiCard('ROI Gramica (GA)', roiF(G.roiGA), 'Ventes GA / montant réservations')}
+      ${kpiCard('Montant des réservations', eur(G.booking), nResa?('Panier moyen : '+eur(G.booking/nResa)):'', false, deltaBadge(G.booking, Gprev&&Gprev.booking, eur), 'money')}
+      ${kpiCard('Vente globale GA', eur(G.ga), 'Toutes sources confondues', false, deltaBadge(G.ga, Gprev&&Gprev.ga, eur))}
+      ${kpiCard('% Gramica sur le global GA', partGA==null?'':pct(partGA), 'Réservations attribuées / ventes totales du site')}
     </div>
     ${activeCompare()?`<p class="cmp-note">Les écarts sont calculés vs la période précédente de même durée (${periodShort(prev)} ${YEAR}).</p>`:''}
 
@@ -23793,7 +24246,7 @@ function renderOverview(){
       <h3>Performance par hôtel</h3>
       <p class="hint">Cumul ${periodShort()} ${YEAR}${top2.length===2?` — ${top2[0]} et ${top2[1]} concentrent l'essentiel du chiffre d'affaires attribué`:''}.</p>
       ${hotelTable}
-      <p class="footnote">Chiffres établis à partir des reportings par hôtel. La « dépense » est le montant consommé sur les plateformes ; elle diffère du budget groupe affiché en haut de page, qui provient de l’Executive Summary. Le nombre de réservations vient du suivi de conversion des régies (colonne « Achat site Web »).</p>
+      <p class="footnote">Chiffres établis à partir des reportings par hôtel. La « dépense » est le budget média géré sur les plateformes ; elle diffère du budget groupe affiché en haut de page, qui provient de l’Executive Summary. Le nombre de réservations vient du suivi de conversion des régies (colonne « Achat site Web »).</p>
     </div>
 
     <div class="sect">
@@ -23857,7 +24310,7 @@ function kwList(kws){
     <li>
       <span class="kw-t">${esc(k.kw)}${k.tag==='added'?' <span class="tag add">ajouté</span>':k.tag==='removed'?' <span class="tag rem">retiré</span>':''}</span>
       <span class="kw-barrail"><span class="kw-bar" style="width:${k.vol?Math.max(3,k.vol/max*100):0}%"></span></span>
-      <span class="kw-v">${k.vol!=null?num(k.vol):'—'}</span>
+      <span class="kw-v">${k.vol!=null?num(k.vol):''}</span>
     </li>`).join('')}</ul>`;
 }
 
@@ -24019,15 +24472,15 @@ const CA_SHEET_COLOR = {'La Pirogue':'pirogue','Sugar Beach':'sugar','Ambre':'am
 
 /* les écarts sont stockés en ratio dans le fichier (0,5604 → +56 %),
    comme l'indique sa propre note de synthèse */
-const caPctRaw = v => v == null ? '—' : (v >= 0 ? '+' : '') + Math.round(v * 100) + ' %';
-const caDelta = v => v == null ? '—'
+const caPctRaw = v => v == null ? '' : (v >= 0 ? '+' : '') + Math.round(v * 100) + ' %';
+const caDelta = v => v == null ? ''
   : '<span class="delta ' + (v >= 0 ? 'up' : 'down') + '">' + caPctRaw(v) + '</span>';
-const caVal = v => v == null ? '—' : (typeof v === 'number' ? eur(v) : esc(v));
+const caVal = v => v == null ? '' : (typeof v === 'number' ? eur(v) : esc(v));
 
 /* graphique des lignes mensuelles de la feuille globale */
 function caBars(rowsIn, years){
   const rows = rowsIn;
-  const W = 720, H = 300, ML = 56, MR = 10, MT = 14, MB = 46;
+  const W = 900, H = 330, ML = 56, MR = 10, MT = 14, MB = 46;
   const iw = W - ML - MR, ih = H - MT - MB;
   const fills = ['#cfc6b8', '#8d8377', '#1e8e5a'];
   let max = 0;
@@ -24083,12 +24536,43 @@ function caTable(sheet){
          r.values.map(v => '<td>' + caVal(v) + '</td>').join('') +
          '<td>' + caDelta(r.delta) + '</td></tr>';
   }
-  for(const t of sheet.totals){
+  /* deux totaux affichés : Janv–Sept, qui porte les cartes et les notes, puis
+     Janv–Déc. Les totaux comparatifs du fichier (Janv–Juin, Juil–Août, Juil–Déc)
+     restent dans les données mais n'encombrent plus le tableau. */
+  for(const t of sheet.totals.filter(x => x.scope === 'janv-sept' || x.scope === 'janv-dec')){
     h += '<tr class="total"><td style="text-align:left">' + esc(t.label) + '</td>' +
          t.values.map(v => '<td>' + caVal(v) + '</td>').join('') +
          '<td>' + caDelta(t.delta) + '</td></tr>';
   }
   return h + '</tbody></table></div>';
+}
+
+/* Note de synthèse sur Janv–Sept : le périmètre réellement couvert par 2026.
+   Un cumul annuel opposerait 9 mois de 2026 à 12 mois des années pleines. */
+const CA_M9 = ['janvier','février','mars','avril','mai','juin','juillet','août','septembre'];
+const caNorm = v => String(v).trim().toLowerCase();
+
+function caNote(sheet, years){
+  const r9 = sheet.rows.filter(r => CA_M9.includes(caNorm(r.label)));
+  if(!r9.length) return '';
+  const t = [0,1,2].map(k => r9.reduce((a,r) => a + (typeof r.values[k]==='number' ? r.values[k] : 0), 0));
+  const d = t[1] ? t[2]/t[1] - 1 : null;
+
+  /* mois du périmètre vides côté 2026 alors qu'ils sont renseignés en 2025 :
+     ils tirent l'écart vers le bas sans que rien ne le signale */
+  const creux = r9.filter(r => !(typeof r.values[2]==='number' && r.values[2] > 0)
+                            &&  (typeof r.values[1]==='number' && r.values[1] > 0))
+                  .map(r => r.label.trim());
+
+  let txt = 'Janv–Sept : <b>' + caVal(t[2]) + '</b> en ' + esc(years[2]) +
+            ', ' + caVal(t[1]) + ' en ' + esc(years[1]) +
+            ', ' + caVal(t[0]) + ' en ' + esc(years[0]) + '.';
+  if(d != null) txt += ' Écart ' + esc(years[2]) + ' vs ' + esc(years[1]) + ' : ' + caPctRaw(d) + '.';
+  if(creux.length){
+    txt += '<br>' + esc(creux.join(', ')) + ' ' + (creux.length>1?'sont vides':'est vide') +
+           ' en ' + esc(years[2]) + ' dans le fichier : l’écart ci-dessus est minoré d’autant.';
+  }
+  return '<p class="footnote">' + txt + '</p>';
 }
 
 function renderCA(){
@@ -24101,7 +24585,8 @@ function renderCA(){
   const years = (glob.header.length ? glob.header.slice(1, 4) : ['2024', '2025', '2026']);
 
   /* les trois indicateurs reprennent la ligne de total du fichier, sans retraitement */
-  const tot = glob.totals[0] || null;
+  /* cartes sur Janv–Sept : mêmes mois des trois côtés, donc écart lisible */
+  const tot = glob.totals.find(t => t.scope === 'janv-sept') || glob.totals[0] || null;
   const kpis = tot ? '<div class="kpis">' +
       kpiCard(esc(years[2]) + ' · ' + esc(tot.label.replace(/^Total\s*/i, '')), caVal(tot.values[2]),
               esc(glob.title), true) +
@@ -24118,7 +24603,7 @@ function renderCA(){
     return '<div class="sect"' + style + '>' +
       '<h3' + hstyle + '>' + esc(sh.title || sh.name) + '</h3>' +
       caTable(sh) +
-      (sh.notes.length ? '<p class="footnote">' + sh.notes.map(esc).join('<br>') + '</p>' : '') +
+      caNote(sh, years) +
       '</div>';
   }).join('');
 
@@ -24159,7 +24644,7 @@ function renderTimeline(){
       tl += `<tr><td class="tl-chan">${lab}</td>`;
       for(const i of months){
         const c = byMonth[i] ? byMonth[i][plat] : null;
-        if(!c || c.bud<=0){ tl += `<td><span class="tl-cell off">—</span></td>`; continue; }
+        if(!c || c.bud<=0){ tl += `<td><span class="tl-cell off">&nbsp;</span></td>`; continue; }
         tl += `<td><span class="tl-cell" style="${shade(c.bud, cfg.accent)}" title="${MONTH_LABEL[MONTH_ORDER[i]]} · ${lab} — ${eur(c.bud)}${c.ach?' · '+c.ach+' réservation'+(c.ach>1?'s':''):''}">
           <b>${eur(c.bud)}</b>${c.ach?c.ach+' résa':'&nbsp;'}</span></td>`;
       }
@@ -24183,7 +24668,7 @@ function renderTimeline(){
     const vs = g.variants.filter(v=>/Test/.test(v.variant)).sort((a,b)=>a.variant.localeCompare(b.variant));
     if(vs.length<2) return '';
     const win = vs.reduce((a,v)=> (v.resa/(v.bud||1)) > (a.resa/(a.bud||1)) ? v : a, vs[0]);
-    const cells = v => `<td>${eur(v.bud)}</td><td>${num(v.imp)}</td><td>${num(v.cl)}</td><td>${v.imp?pct(v.cl/v.imp):'—'}</td><td>${nbCell(v.ach)}</td><td>${v.resa?eur(v.resa):'—'}</td><td>${roiPill(v.bud?v.resa/v.bud:0)}</td>`;
+    const cells = v => `<td>${eur(v.bud)}</td><td>${num(v.imp)}</td><td>${num(v.cl)}</td><td>${v.imp?pct(v.cl/v.imp):''}</td><td>${nbCell(v.ach)}</td><td>${v.resa?eur(v.resa):''}</td><td>${roiPill(v.bud?v.resa/v.bud:0)}</td>`;
     return vs.map((v,i)=>`<tr>
       ${i===0?`<td rowspan="${vs.length}" style="font-weight:600"><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${g.cfg.accent};margin-right:7px"></span>${esc(g.cfg.name)}<br><span style="font-weight:400;color:var(--muted);font-size:12px">${MONTH_LABEL[MONTH_ORDER[g.monthIdx]]} · Meta</span></td>`:''}
       <td style="text-align:left">${v.variant}${v===win&&win.resa>0?' <span class="tag add">gagnant</span>':''}</td>${cells(v)}</tr>`).join('');
@@ -24229,7 +24714,7 @@ function renderTimeline(){
       <p class="hint">Campagne thématique diffusée en complément des campagnes permanentes.</p>
       <div class="twrap"><table><thead><tr><th>Hôtel</th><th>Dépense</th><th>Impressions</th><th>Clics</th><th>CTR</th><th>Nb résa</th></tr></thead><tbody>
         ${stVal.map(v=>`<tr><td><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${v.cfg.accent};margin-right:7px"></span>${esc(v.cfg.name)}</td>
-        <td>${eur(v.bud)}</td><td>${num(v.imp)}</td><td>${num(v.cl)}</td><td>${v.imp?pct(v.cl/v.imp):'—'}</td><td>${nbCell(v.ach)}</td></tr>`).join('')}
+        <td>${eur(v.bud)}</td><td>${num(v.imp)}</td><td>${num(v.cl)}</td><td>${v.imp?pct(v.cl/v.imp):''}</td><td>${nbCell(v.ach)}</td></tr>`).join('')}
         <tr class="total"><td>TOTAL</td><td>${eur(stVal.reduce((a,v)=>a+v.bud,0))}</td><td>${num(stVal.reduce((a,v)=>a+v.imp,0))}</td><td>${num(stVal.reduce((a,v)=>a+v.cl,0))}</td><td></td><td>${nbCell(stVal.reduce((a,v)=>a+v.ach,0))}</td></tr>
       </tbody></table></div>
       <p class="footnote">L'opération a généré de la couverture mais aucune réservation directement attribuée : le format thématique court sert la notoriété plus que la conversion.</p>
@@ -24240,7 +24725,7 @@ function renderTimeline(){
       <p class="hint">Arbitrages effectués sur les campagnes Search d'un bilan à l'autre, à partir des performances observées.</p>
       <div class="twrap"><table><thead><tr><th>Hôtel</th><th>Mot-clé</th><th>Volume mensuel</th><th>Décision</th></tr></thead><tbody>
         ${optim.map(o=>`<tr><td><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${o.hotel.accent};margin-right:7px"></span>${esc(o.hotel.name)}</td>
-        <td style="text-align:left">${esc(o.kw)}</td><td>${o.vol!=null?num(o.vol):'—'}</td>
+        <td style="text-align:left">${esc(o.kw)}</td><td>${o.vol!=null?num(o.vol):''}</td>
         <td>${o.action==='added'?'<span class="tag add">ajouté</span>':'<span class="tag rem">retiré</span>'}</td></tr>`).join('')}
       </tbody></table></div>
       <p class="footnote">Comparaison des jeux de mots-clés entre le bilan précédent et le bilan courant. Les retraits portent surtout sur des requêtes larges ou hors positionnement, dont le coût par clic ne se justifiait pas.</p>
